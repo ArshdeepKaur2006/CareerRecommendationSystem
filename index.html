@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Career Recommendation System</h1>
+
+        <!-- Step 1: Stream -->
+        <div id="step1" class="step">
+            <h2>Which stream did you complete in 12th?</h2>
+            <select id="stream">
+                <option value="">Select Stream</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select>
+            <button onclick="nextStep(1)">Next</button>
+        </div>
+
+        <!-- Step 2: Interest -->
+        <div id="step2" class="step">
+            <h2>What are your interests?</h2>
+            <label><input type="checkbox" value="technology"> Technology</label>
+            <label><input type="checkbox" value="business"> Business</label>
+            <label><input type="checkbox" value="creative"> Creative Arts</label>
+            <label><input type="checkbox" value="sports"> Sports</label>
+            <label><input type="checkbox" value="healthcare"> Healthcare</label>
+            <label><input type="checkbox" value="socialservice"> Social Service</label>
+            <label><input type="checkbox" value="media"> Media</label>
+            <button onclick="nextStep(2)">Next</button>
+        </div>
+
+        <!-- Step 3: General Quiz -->
+        <div id="step3" class="step">
+            <h2>General Knowledge Quiz</h2>
+            <div id="quiz1">
+                <!-- Quiz questions will be injected here -->
+            </div>
+            <button onclick="nextStep(3)">Next</button>
+        </div>
+
+        <!-- Step 4: Subject Quiz -->
+        <div id="step4" class="step">
+            <h2>Subject Related Quiz</h2>
+            <div id="quiz2">
+                <!-- Quiz questions will be injected here -->
+            </div>
+            <button onclick="nextStep(4)">Get Recommendation</button>
+        </div>
+
+        <!-- Step 5: Recommendation -->
+        <div id="step5" class="step">
+            <h2>Your Career Recommendation</h2>
+            <div id="recommendation">
+                <!-- Result will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
